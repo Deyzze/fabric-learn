@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "learnmod",
+  "version": "${version}",
+
+  "name": "Learn mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Deyzze"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.deyzze.learnmod.LearnMod"
+    ],
+    "cleint": [
+      "net.deyzze.learnmod.LearnModClient"
+    ]
+  },
+  "mixins": [
+    "learnmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
